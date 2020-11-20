@@ -1,0 +1,50 @@
+<html charset="UTF-8">
+<head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <title>Thanksgiving Travel Tester</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        .wrapper {
+            text-align: center;
+        }
+
+        .button {
+            height: 200px;
+            top: 40%;
+        }
+
+        .answer {
+            text-align: center;
+            height: 200px;
+            top: 40%;
+            visibility: hidden;
+            font-size: 180pt;
+            color: white;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <div class="wrapper" id="question">
+        <p>
+            <button class="w3-button w3-black button" onclick="showAnswer();">Is it Safe to Travel for Thanksgiving?</button>
+        </p>
+    </div>
+
+    <div class="wrapper" id="wrapper">
+        <p class="answer" id="answer">
+            NO!
+        </p>
+    </div>
+
+<script>
+        function showAnswer() {
+            $( "#question" ).hide();
+            $("body").css("background-color","red");
+            $( "#answer" ).css('visibility', 'visible');
+        }
+    </script>
+</body>
+</html>
